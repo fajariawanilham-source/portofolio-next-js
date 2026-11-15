@@ -16,10 +16,10 @@ const skills = [
 export default function Keahlian() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
-      <h1 className="mb-4 text-3xl font-bold text-utama md:text-4xl">
+      <h1 className="mb-4 text-3xl font-bold text-utama dark:text-sky-200 md:text-4xl">
         Keahlian Saya
       </h1>
-      <p className="mb-6 text-lg text-gray-700">
+      <p className="mb-6 text-lg text-gray-700 dark:text-gray-300">
         Berikut keahlian yang sedang saya pelajari dan kembangkan.
       </p>
       <div className="grid gap-4 md:grid-cols-3">

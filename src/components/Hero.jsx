@@ -14,9 +14,9 @@ md:flex-row md:text-left">
         className="rounded-full border-4 border-aksen"
       />
       <div>
-        <h1 className="text-3xl font-bold text-utama 
+        <h1 className="text-3xl font-bold text-utama dark:text-sky-200 
 md:text-5xl">Halo, saya {nama}!</h1>
-        <p className="mt-3 text-lg text-gray-700">{tagline}</p>
+        <p className="mt-3 text-lg text-gray-700 dark:text-gray-300">{tagline}</p>
         {ctaHref && ctaLabel && (
           <Link
             href={ctaHref}

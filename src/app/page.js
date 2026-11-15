@@ -27,7 +27,7 @@ export default function Home() {
         ctaLabel="Tentang Saya"
       />
       <section className="mt-10">
-        <h2 className="mb-4 text-2xl font-bold text-utama">Keahlian</h2>
+        <h2 className="mb-4 text-2xl font-bold text-utama dark:text-sky-200">Keahlian</h2>
         <div className="grid gap-4 md:grid-cols-3">
           {skills.map((skill) => (
             <SkillCard key={skill.nama} nama={skill.nama}
@@ -42,7 +42,7 @@ export default function Home() {
         </Link>
       </section>
       <section className="mt-10">
-        <h2 className="mb-4 text-2xl font-bold text-utama">Proyek Terbaru</h2>
+        <h2 className="mb-4 text-2xl font-bold text-utama dark:text-sky-200">Proyek Terbaru</h2>
         <div className="grid gap-6 md:grid-cols-3">
           {proyekTerbaru.map((item) => (
             <ProyekCard key={item.slug} proyek={item} />
@@ -55,19 +55,20 @@ export default function Home() {
           Lihat semua proyek
         </Link>
       </section>
-      <section className="mt-10 rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-        <h2 className="mb-4 text-2xl font-bold text-utama">Jadwal Belajar</h2>
+      <section className="mt-10 rounded-xl border border-gray-200
+dark:border-gray-700 bg-white dark:bg-gray-800 p-5 shadow-sm">
+        <h2 className="mb-4 text-2xl font-bold text-utama dark:text-sky-200">Jadwal Belajar</h2>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[480px] border-collapse text-left">
             <thead>
               <tr>
-                <th scope="col" className="border-2 border-utama bg-utama p-3 text-white">
+                <th scope="col" className="border-2 border-utama dark:border-sky-200 bg-utama p-3 text-white">
                   Hari
                 </th>
-                <th scope="col" className="border-2 border-utama bg-utama p-3 text-white">
+                <th scope="col" className="border-2 border-utama dark:border-sky-200 bg-utama p-3 text-white">
                   Waktu
                 </th>
-                <th scope="col" className="border-2 border-utama bg-utama p-3 text-white">
+                <th scope="col" className="border-2 border-utama dark:border-sky-200 bg-utama p-3 text-white">
                   Kegiatan
                 </th>
               </tr>
@@ -75,9 +76,12 @@ export default function Home() {
             <tbody>
               {jadwalBelajar.map((jadwal) => (
                 <tr key={jadwal.hari}>
-                  <td className="h-12 border-2 border-gray-300 p-3">{jadwal.hari}</td>
-                  <td className="h-12 border-2 border-gray-300 p-3">{jadwal.waktu}</td>
-                  <td className="h-12 border-2 border-gray-300 p-3">{jadwal.kegiatan}</td>
+                  <td className="h-12 border-2 border-gray-300
+dark:border-gray-600 p-3">{jadwal.hari}</td>
+                  <td className="h-12 border-2 border-gray-300
+dark:border-gray-600 p-3">{jadwal.waktu}</td>
+                  <td className="h-12 border-2 border-gray-300
+dark:border-gray-600 p-3">{jadwal.kegiatan}</td>
                 </tr>
               ))}
             </tbody>

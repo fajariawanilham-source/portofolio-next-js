@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title:{
+  title: {
     default: "ilham fajariawan | Portofolio",
     template: "%s | ilham fajariawan",
-   },
+  },
   description: "Portofolio ilham fajariawan, sisiwa SMK calon junior web developer di kelas industri UBIG",
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       lang="id"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-       <body className="min-h-full flex flex-col bg-latar text gray-800">
+      <body className="min-h-full flex flex-col bg-latar dark:bg-gray-900 dark:bg-gray-900 text gray-800">
         <Navbar />
         {children}
         <Footer />
